@@ -1,0 +1,15 @@
+[workspace]
+resolver = "2"
+members = ["app", "migration", "entity"]
+
+[workspace.dependencies]
+migration = { path = "migration" }
+entity = { path = "entity" }
+
+anyhow = "1.0.94"
+sea-orm = { version = "1.1.2", features = [ "sqlx-postgres", "runtime-tokio-native-tls", "macros", "with-chrono", "with-json", "with-uuid" ] }
+tokio = { version = "1.42.0", features = ["full"]}
+dotenv = "0.15.0"
+serde = { version = "1.0.209", features = ["derive"] }
+uuid = { version = "1.11.0", features = ["v4"] }
+serde_json = "1.0.133"

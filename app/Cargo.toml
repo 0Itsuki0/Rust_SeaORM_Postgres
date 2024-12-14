@@ -1,0 +1,18 @@
+[package]
+name = "app"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+
+[dependencies]
+anyhow = { workspace = true }
+tokio = { workspace = true }
+dotenv = { workspace = true }
+sea-orm = { workspace = true }
+serde = { workspace = true }
+uuid = { workspace = true }
+serde_json = { workspace = true }
+
+migration = { workspace = true }
+entity = { workspace = true }
